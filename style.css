@@ -67,18 +67,17 @@ h1 {
     padding: 10px;
 }
 
-.footer-main {
+/* .footer-main {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: flex-start;
     justify-content: space-between;
     margin: 50px;
 }
 .tight-space {
     margin-top: 0px;
-    margin-bottom: 5px; /* Adjust this number to get the exact look you want */
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 5px; 
+    
 }
 .footer-last {
     display: flex;
@@ -86,5 +85,10 @@ h1 {
     justify-content: space-between;
     align-items:flex-end;
     margin: 50px;
-
+} */
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
