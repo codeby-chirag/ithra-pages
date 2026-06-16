@@ -17,11 +17,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: #ccc;
-}
-
 .ih-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -83,71 +78,6 @@ a {
     color: #333;
 }
 
-/*  NEW UNIVERSAL HEADER STYLES HAMBURGER */
-/* .main-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 80px;
-    position: relative; 
-    background-color: white;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.img2 {
-    height: 85px;
-    width: 180px;
-}
-
-.hamburger {
-    display: block; 
-    font-size: 28px;
-    cursor: pointer;
-    color: #333;
-}
-
-.nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 80px; 
-    min-width: 250px; 
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.15); 
-    z-index: 1000;
-    flex-direction: column;
-    gap: 15px;
-    border-radius: 8px; 
-}
-
-.nav-menu.active {
-    display: flex; 
-}
-
-.top-nav, .bottom-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.top-nav a, .bottom-nav a {
-    color: black !important;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 17px;
-    display: block; 
-}
-
-.top-nav a:hover, .bottom-nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: #F8C339;
-    text-underline-offset: 8px;
-} */
 
 /* FORM & CONTENT STYLES */
 .ih-form-container {
@@ -263,7 +193,7 @@ a {
     transform: rotate(45deg);
     margin-bottom: 2px;
 }
-/* --- */
+/* Booking button */
 .ih-book-btn {
     margin-top: 10px; 
     background-color: #F8C339; 
@@ -350,12 +280,18 @@ a {
 
 .ih-footer-bottom {
     display: flex;
-    align-self: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 15px;
     padding-left: 0px;
     font-size: x-small;
     color: gray;
+}
+.ih-copyright, .ih-footer-bottom-link {
+    margin: 0;
+    color: grey;
+    text-decoration: none;
 }
 
 .ih-social-icon {
