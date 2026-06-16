@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.ih-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* DESKTOP HEADER STYLES WITH HAMBURGER MENU */
+.ih-main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 80px;
+    position: relative; 
+    background-color: white;
+}
+
+.ih-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.ih-img2 {
+    height: 85px;
+    width: 180px;
+}
+
+.ih-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ih-top-nav, .ih-bottom-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.ih-nav-link {
+    color: black !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.ih-nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #F8C339;
+    text-underline-offset: 8px;
+}
+
+.ih-hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+/*  NEW UNIVERSAL HEADER STYLES HAMBURGER */
+/* .main-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 80px;
+    position: relative; 
+    background-color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.img2 {
+    height: 85px;
+    width: 180px;
+}
+
+.hamburger {
+    display: block; 
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 80px; 
+    min-width: 250px; 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15); 
+    z-index: 1000;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px; 
+}
+
+.nav-menu.active {
+    display: flex; 
+}
+
+.top-nav, .bottom-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-nav a, .bottom-nav a {
+    color: black !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    display: block; 
+}
+
+.top-nav a:hover, .bottom-nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #F8C339;
+    text-underline-offset: 8px;
+} */
+
+/* FORM & CONTENT STYLES */
+.ih-form-container {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.ih-booking-info {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.ih-l1 {
+    color: #555;
+}
+
+.ih-checkbox-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px; 
+    accent-color: rgb(222, 107, 6);
+}
+
+.ih-main-heading {
+    color:#4A5568;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    font-weight: 500;
+}
+
+.ih-pra1 {
+    width: 100%;
+    text-align: left;
+}
+
+.ih-in1 {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #999999;
+    border-radius: 20px; 
+    padding: 10px 15px; 
+    outline: none;
+}
+
+.ih-txt1 {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ih-calender-txt {
+    border: 1px solid #999999; 
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.ih-booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: max-content; 
+    margin-bottom: 50px; 
+}
+
+.ih-custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+/* Container for the checkbox and text */
+.ih-custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+}
+
+/* Remove default styling and draw custom box */
+.ih-custom-checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1.5px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+/* Color Change when clicked */
+.ih-custom-checkbox input[type="checkbox"]:checked {
+    background-color: #F8C339;
+    border-color: #F8C339;
+}
+
+/* white checkmark inside the input */
+.ih-custom-checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+/* --- */
+.ih-book-btn {
+    margin-top: 10px; 
+    background-color: #F8C339; 
+    color: black;
+    border: none;
+    padding: 10px 62px;
+    border-radius: 20px; 
+    font-size: 14px;
+}
+
+.ih-form-group {
+    margin-bottom: 30px; 
+}
+
+.ih-form-group label.ih-l1,
+.ih-form-group p.ih-l1 {
+    display: block;      
+    margin-bottom: 15px; 
+}
+
+.ih-booking-info h1 {
+    margin-bottom: 15px;
+}
+
+.ih-booking-info .ih-pra1 {
+    margin-bottom: 40px; 
+}
+
+/* FOOTER STYLES */
+.ih-footer-main {
+    background-color: black;
+    color: #ccc;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.ih-footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.ih-tight-space {
+    display: block; 
+    margin: 16px 0; 
+    color: #ccc;
+    text-decoration: none;
+}
+
+.ih-tight-space:hover {
+    text-decoration: underline; 
+    color: #F8C339; 
+}
+
+.ih-footer-bottom-text, .ih-footer-bottom-link {
+    margin: 0; 
+    color: gray;
+    text-decoration: none;
+}
+.ih-footer-bottom-link:hover {
+    text-decoration: underline;
+}
+
+.ih-footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.ih-contact, 
+.ih-link1, 
+.ih-link2 {
+    flex: 0 0 250px; 
+}
+
+.ih-footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+}
+
+.ih-footer-bottom {
+    display: flex;
+    align-self: flex-start;
+    gap: 30px;
+    padding: 15px;
+    padding-left: 0px;
+    font-size: x-small;
+    color: gray;
+}
+
+.ih-social-icon {
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.ih-bottom-img {
+    height: 70px;
+    width: 80px;
+}
+
+#copy-rights {
+    font-size: 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 767px) {
+    .ih-page-wrapper {
+        width: 100%;
+    }
+
+    .ih-main-header {
+        padding: 15px 20px;
+    }
+
+    .ih-hamburger {
+        display: block; 
+    }
+
+    .ih-nav-menu {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .ih-nav-menu.active {
+        display: flex;
+    }
+
+    .ih-top-nav, .ih-bottom-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* --- Form & Footer --- */
+    .ih-booking-info,
+    .ih-form-container,
+    .ih-footer-main {
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .ih-footer-top {
+        display: flex; 
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .ih-contact, 
+    .ih-link1, 
+    .ih-link2 {
+        width: 100%;
+        flex: none; 
+    }
+
+    .ih-footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
