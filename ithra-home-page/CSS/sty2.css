@@ -29,11 +29,12 @@ body {
 
 .ih-container {
     width: 100%;
-
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
 .ih-section-title {
@@ -130,7 +131,7 @@ body {
 
 /* HERO SECTION */
 .ih-hero-section {
-    background-image: url('./images/images/main-section-bg-img.jpg');
+    background-image: url('../images/main-section-bg-img.jpg');
     background-size: cover;
     background-position: center top;
     min-height: 100vh;
@@ -214,8 +215,9 @@ body {
 /* ACADEMY DOMAINS SECTION */
 .ih-academy-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    row-gap: 45px;
 }
 
 .ih-domain-card {
@@ -227,8 +229,8 @@ body {
 
 .ih-domain-img {
     width: 100%;
+    height: 260px;
     border-radius: 15px;
-    aspect-ratio: 4/3;
     object-fit: cover;
 }
 
@@ -281,14 +283,19 @@ body {
 
 .ih-partners-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 260px);
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    row-gap: 45px;
+    column-gap: 40px;
 }
 
 .ih-partner-logo {
-    border: 1px solid #e0e0e0;
-    color: #888888;
+    width: 170px;
     height: 100px;
+    border: 1px solid #d9d9d9;
+    color: #777777;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +323,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
+    width: 350px;
     max-width: 500px;
 }
 
@@ -337,12 +344,32 @@ body {
 
 /* FOOTER */
 .ih-footer-main {
+    /* background-color: black;
+    color: #ccc;
+    padding-left: 40px;
+    padding-right: 20px; */
+
     background-color: black;
     color: #ccc;
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    padding-left: 40px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ih-footer-top,
+.ih-footer-middle,
+.ih-footer-bottom {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.ih-footer-main hr {
+    width: calc(100% - 140px);
+    max-width: 1300px;
+    margin: 2px auto !important;
 }
 
 .ih-footer-top {
@@ -362,7 +389,6 @@ body {
     text-decoration: none;
     color: inherit;
 }
-
 .ih-footer-link:hover {
     text-decoration: underline;
     color: #F8C339;
@@ -375,6 +401,7 @@ body {
 .ih-footer-text {
     color: #ccc;
     margin: 0;
+    text-decoration: none;
 }
 
 .ih-footer-middle {
@@ -400,7 +427,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px; 
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
     font-size: 0.75rem; 
     color: gray;
 }
@@ -501,8 +531,89 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+    .ih-academy-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ih-domain-img {
+        height: 230px;
+    }
+
     .ih-partners-grid {
+        grid-template-columns: repeat(3, 220px);
+        justify-content: space-between;
+        padding-left: 30px;
+        column-gap: 30px;
+    }
+
+    .ih-partner-logo {
+        width: 170px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ih-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .ih-academy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ih-partners-grid {
+        /* grid-template-columns: repeat(2, 220px); */
+        grid-template-columns: repeat(2, 260px);
+        justify-content: center;
+
+        justify-items: center;
+
+        padding-left: 0;
+        /* column-gap: 60px; */
+        column-gap: 50px;
+        row-gap: 35px;
+    }
+    .ih-partner-logo {
+        width: 170px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ih-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ih-academy-grid {
         grid-template-columns: 1fr;
+    }
+
+    .ih-domain-img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .ih-partners-grid {
+        /* grid-template-columns: 1fr;
+        justify-items: center;
+        padding-left: 0;
+        row-gap: 25px; */
+
+        grid-template-columns: 260px;
+        justify-content: center;
+        justify-items: center;
+        padding-left: 0;
+        row-gap: 25px;
+    }
+
+    .ih-partner-logo {
+        width: 170;
+        max-width: 150px;
+    }
+    .ih-subscribe-form{
+        width: 250px;
     }
 }
