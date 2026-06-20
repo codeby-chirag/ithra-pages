@@ -4,121 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ithara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <div class="flex-container">
-        <div class="flex-item1">
-            <ul class="header">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My Courses</a></li>
-                <img class="img1" src="./images/images/logo.png" alt="Logo"> 
-            </ul>
-
+    <div class="page-wrapper">
+        <div class="flex-container">
             <div class="flex-item1">
                 <ul class="header">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Book Consultation</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>   
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">My Courses</a></li>
+                    <img class="img1" src="./images/images/logo-removebg-preview.png" alt="Logo"> 
+                </ul>
+
+                <div class="flex-item1">
+                    <ul class="header">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Book Consultation</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>   
+                </div>
+            </div>
+            <div>
+                    <img class="img2" src="./images/images/CROP_main_logo-removebg-preview.png" alt="Ithra Logo">
             </div>
         </div>
-        <div>
-            <ul>
-                <img class="img2" src="./images/images/main logo.png" alt="Ithra Logo">
-            </ul>
-       </div>
-    </div>
         
-        <h1>Book a Consultation</h1>
-        <p class="pra1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint neque molestias quos quidem, esse nihil totam facilis voluptas, itaque iure quae expedita? Rerum, facere fuga commodi quod inventore aspernatur.</p><br><br>
+        <div class="booking-info">
+            <h1>Book a Consultation</h1><br>
+            <p class="pra1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint neque molestias quos quidem, esse nihil totam facilis voluptas, itaque iure quae expedita? Rerum, facere fuga commodi quod inventore aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum asperiores, voluptatibus nobis corrupti accusantium consectetur esse aliquam numquam quo dolorem ducimus eveniet modi. Ipsa est nemo nihil delectus aut.</p><br><br>
+        </div>
 
-        <form>
-            <label class="l1" for="name">Full Name</label><br>
-            <input class="in1" type="text" id="t1" name="name" placeholder="Enter your full name" required><br><br>
+        <div class="form-container">
+            <form>
+                <label class="l1" for="name">Full Name</label><br><br>
+                <input class="in1" class="l1" type="text" name="name" placeholder="Enter your full name" required><br><br><br>
 
-            <label class="l1" for="Email">Email</label><br><br>
-            <input class="in1" type="email" id="t1" name="Email" placeholder="Enter your email" required><br><br>
+                <label class="l1" for="Email">Email</label><br><br>
+                <input class="in1" type="email" name="Email" placeholder="Enter your email" required><br><br><br>
 
-            <label class="l1" for="Phone Number">Phone Number</label><br><br>
-            <input class="in1" type="text" id="t1" name="Phone Number" placeholder="Enter your phone number" required><br><br>
+                <label class="l1" for="Phone Number">Phone Number</label><br><br>
+                <input class="in1" type="text" name="Phone Number" placeholder="Enter your phone number" required><br><br>
 
-            <p>Why do you want to book a consultation session?</p>
+                <p class="l1">Why do you want to book a consultation session?</p>
 
-            <input type="checkbox" id="option1" name="reason" value="option1">
-            <label for="option1">Inquiry about ithra Academy</label><br>
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        <!-- <b>Inquiry about ithra Academy</b> -->
+                         Inquiries about ithra Academy
+                    </label>
 
-            <input type="checkbox" id="option1" name="reason" value="option1">
-            <label for="option1">Inqury about the domain</label><br>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>Inquiry about the domain</b> -->
+                         Inquiries about the domain
+                    </label>
 
-            <input type="checkbox" id="option1" name="reason" value="option1">
-            <label for="option1">Inquiry about certain courses</label><br>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>Inquiry about certain courses</b> -->
+                        Inquiries about certain courses
+                    </label>
 
-            <input type="checkbox" id="option1" name="reason" value="option1">
-            <label for="option1">Other</label><br><br>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>Other</b> -->
+                        Other
+                    </label>
 
-            <input class="in1" type="text" id="text" name="text" placeholder="Please specify" required><br><br>
+                </div>
+                <br>
 
-            <label for="text">Tell Us More (Optional)</label><br><br>
-            <textarea class="txt1" rows="8" cols="215" name="text" placeholder="Tell us more about your inquiry..." ></textarea><br><br>    
+                <input class="in1" type="text" id="text" name="text" placeholder="Please specify" required><br><br><br>
 
-            <label for="text">Please select preferred date and time</label><br><br>
-            <textarea class="txt1" rows="8" cols="215" name="text" placeholder="Calendar view showing workdays of next month only"></textarea><br><br>
+                <label class="l1" for="text">Tell Us More (Optional)</label><br><br>
+                <textarea  class="calender-txt" rows="8"  name="text" placeholder="Tell us more about your inquiry..." ></textarea><br><br><br>  
 
-            <input type="checkbox">
-            <label for="option1">8:00 am - 8:30 am</label><br>
-            <input type="checkbox">
-            <label for="option1">9:00 am - 9:30 am</label><br>
-            <input type="checkbox">
-            <label for="option1">10:00 am - 10:30 am</label><br>
-            <input type="checkbox">
-            <label for="option1">11:00 am - 11:30 am</label><br>
-            <input type="checkbox">
-            <label for="option1">12:00 pm - 12:30 pm</label><br><br>    
-            
-            
-            <button type="submit">Book Now</button>
-        </form> 
-    
-   
+                <label class="l1" for="text">Please select preferred date and time</label><br><br>
+                <textarea class="calender-txt" rows="8" name="text" placeholder="Calendar view showing workdays of next month only"></textarea><br><br>
+
+                <div class="booking-form">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        <!-- <b>8:00 am - 8:30 am</b> -->
+                         8:00 am - 8:30 am
+                    </label>
+                    
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>9:00 am - 9:30 am</b> -->
+                         9:00 am - 9:30 am
+                    </label>
+                    
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>10:00 am - 10:30 am</b> -->
+                         10:00 am - 10:30 am
+                    </label>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>11:00 am - 11:30 am</b> -->
+                         11:00 am - 11:30 am
+                    </label>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <!-- <b>12:00 am - 12:30 am</b> -->
+                         12:00 am - 12:30 am
+                    </label>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <br><br><br>
+                
+            </form> 
+        </div>
+        
         <footer class="footer-main">
-            <div>
-                <p class="tight-space"><a href="#">Contact Us</a></p>
-                <p class="tight-space">International: +966-13-816-9799</p>
-                <p class="tight-space">Toll Free: 800-122-1224</p>
-                <p class="tight-space"><a href="mailto:info@ithra.com">info@ithra.com</a></p>
+            <div class="footer-top">
+                <div class="contact">
+                    <p class="tight-space"><a href="#">Contact Us</a></p>
+                    <p class="tight-space">International: +966-13-816-9799</p>
+                    <p class="tight-space">Toll Free: 800-122-1224</p>
+                    <p class="tight-space"><a href="mailto:info@ithra.com">info@ithra.com</a></p>
+                </div>
+                
+                <div class="link1">
+                    <p class="tight-space"><a href="#">Quick Links</a></p>
+                    <p class="tight-space"><a href="#">About ithra Academy</a></p>
+                    <p class="tight-space"><a href="#">Courses</a></p>
+                    <p class="tight-space"><a href="#">Coaching</a></p>
+                    <p class="tight-space"><a href="#">FAQ</a></p>
+                    <p class="tight-space"><a href="#">About ithra</a></p>
+                    <p class="tight-space"><a href="#">Visit ithara</a></p>
+                    <p class="tight-space"><a href="#">ithra Website</a></p>
+                </div>
+                
+                <div class="link2">
+                    <p class="tight-space"><a href="#">Quick Links</a></p>
+                    <p class="tight-space"><a href="#">About ithra Academy</a></p>
+                    <p class="tight-space"><a href="#">Courses</a></p>
+                    <p class="tight-space"><a href="#">Coaching</a></p>
+                    <p class="tight-space"><a href="#">FAQ</a></p>
+                    <p class="tight-space"><a href="#">About ithra</a></p>
+                    <p class="tight-space"><a href="#">Visit ithara</a></p>
+                    <p class="tight-space"><a href="#">ithra Website</a></p>
+                </div>
             </div>
-
-            <div>
-                <p class="tight-space"><a href="#">Quick Links</a></p>
-                <p class="tight-space"><a href="#">About ithra Academy</a></p>
-                <p class="tight-space"><a href="#">Courses</a></p>
-                <p class="tight-space"><a href="#">Coaching</a></p>
-                <p class="tight-space"><a href="#">FAQ</a></p>
-                <p class="tight-space"><a href="#">About ithra</a></p>
-                <p class="tight-space"><a href="#">Visit ithara</a></p>
-                <p class="tight-space"><a href="#">ithra Website</a></p>
-            </div>
-
-            <div>
-                <p class="tight-space"><a href="#">Quick Links</a></p>
-                <p class="tight-space"><a href="#">About ithra Academy</a></p>
-                <p class="tight-space"><a href="#">Courses</a></p>
-                <p class="tight-space"><a href="#">Coaching</a></p>
-                <p class="tight-space"><a href="#">FAQ</a></p>
-                <p class="tight-space"><a href="#">About ithra</a></p>
-                <p class="tight-space"><a href="#">Visit ithara</a></p>
-                <p class="tight-space"><a href="#">ithra Website</a></p>
-            </div>
-        </footer>
-        <div class="footer-last">
-            <p>fvskjnn</p>
             
-            <img class="img2" src="./images/images/ithra-logo.png">
-        </div>
+            <div class="footer-middle">
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook-f" style="color: rgb(244, 244, 244);"></i>
+                    <i class="fa-brands fa-instagram" style="color: rgb(244, 244, 244);"></i>
+                    <i class="fa-brands fa-twitter" style="color: rgb(244, 244, 244);"></i>
+                    <i class="fa-brands fa-youtube" style="color: rgb(244, 244, 244);"></i>
+                </div>
+                <div class="logo">
+                    <img class="bottom-img" src="./images/images/CROP_Footer_ithra-logo.png" alt="athra logo">
+                </div>
+            </div>
+            <hr style="margin: 2px;">
+            
+            <div class="footer-bottom">
+                <span class="copyright">© 2021 Saudi Arabian Oil Co. King Abdulaziz Center for World Culture</span>
+                <span href="#">Terms & Conditions</span>
+                <span href="#">Privacy Policy</span>
+            </div>
+            
+        </footer>
         
+    </div>
 </body>
 </html>
