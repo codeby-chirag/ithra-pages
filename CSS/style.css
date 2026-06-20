@@ -35,6 +35,10 @@ body {
     padding: 10px 80px;
     position: relative; 
     background-color: white;
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .ih-logo-container {
@@ -80,12 +84,11 @@ body {
 
 
 /* FORM & CONTENT STYLES */
-.ih-form-container {
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
+.ih-form-container,
 .ih-booking-info {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -226,8 +229,8 @@ body {
 .ih-footer-main {
     background-color: black;
     color: #ccc;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .ih-footer-top {
@@ -238,7 +241,31 @@ body {
     padding-top: 50px;
 }
 
+.ih-footer-top,
+.ih-footer-middle,
+.ih-footer-bottom {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.ih-footer-main hr {
+    width: calc(100% - 160px);
+    max-width: 1280px;
+    margin: 2px auto !important;
+}
+
 .ih-tight-space {
+    display: block; 
+    margin: 16px 0; 
+    color: #ccc;
+    text-decoration: none;
+}
+
+.ih-footer-label {
     display: block; 
     margin: 16px 0; 
     color: #ccc;
@@ -283,8 +310,10 @@ body {
     align-self: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 15px;
-    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-size: x-small;
     color: gray;
 }
@@ -330,8 +359,6 @@ body {
         width: 100%;
         background-color: white;
         padding: 20px;
-        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-        z-index: 1000;
     }
 
     .ih-nav-menu.active {
@@ -345,14 +372,30 @@ body {
 
     /* --- Form & Footer --- */
     .ih-booking-info,
-    .ih-form-container,
-    .ih-footer-main {
+    .ih-form-container {
         padding-left: 20px;
         padding-right: 20px;
         align-items: center;
         text-align: center;
     }
-    
+
+    .ih-footer-main {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .ih-footer-top,
+    .ih-footer-middle,
+    .ih-footer-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ih-footer-main hr {
+        width: calc(100% - 40px);
+    }
+
     .ih-footer-top {
         display: flex; 
         flex-direction: column;
